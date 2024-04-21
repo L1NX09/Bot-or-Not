@@ -1,0 +1,40 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('your-image.jpg'); /* Byt ut 'your-image.jpg' mot sökvägen till din bild */
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-button {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 3px solid #000000; /* Tjockare svart ram */
+    padding: 25px 50px; /* Ökat padding för ännu större och bredare knappar */
+    margin: 20px; /* Ökat mellanrum mellan knapparna */
+    font-size: 22px; /* Ökat font-storlek */
+    cursor: pointer;
+    border-radius: 25px; /* Mer uttalade runda hörn */
+    transition: all 0.3s; /* Smidig övergång för alla egenskaper */
+    width: 80%; /* Bestämd bredd för att säkerställa uniformitet */
+    max-width: 400px; /* Maxbredd för att undvika överdrivet breda knappar på större skärmar */
+    text-align: center; /* Centrerar texten i knappen */
+}
+
+.menu-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.menu-button:first-child {
+    background-color: #00008B; /* Mörkblå färg för den första knappen */
+    color: #FFFFFF; /* Vit textfärg för bättre läsbarhet */
+}
